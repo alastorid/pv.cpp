@@ -29,3 +29,6 @@ tar (200 Mbps)     pv buffer         ncat (500 Mbps)
                    ↑ Buffer draining  ↑ Fast output
                    at higher speed    no bottleneck
 ```
+
+## Limitation
+The behavior is undetermined if 16 EiB of data is processed without ever clearing the buffer.
